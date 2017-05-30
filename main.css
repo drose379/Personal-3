@@ -138,13 +138,14 @@ nav #nav-right a:hover {
   align-items: center;
   color: black;
   font-family:sans-serif;
+  border-bottom: 5px solid #3498db;
 }
 
 #landing-bottom #wrap {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2em;
+  margin-bottom: 3%;
   justify-content: center;
 
   max-width: 1500px;
@@ -165,11 +166,9 @@ nav #nav-right a:hover {
   margin: 0;
 }
 
-#landing-bottom h2 {
-  color: #34495e;
+.section-header{
   margin: 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3%;
   font-size: 1.8em;
 }
 
@@ -188,6 +187,25 @@ nav #nav-right a:hover {
 
 .row {
   display: flex;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url( 'res/escheresque_ste.png' ) fixed;
+  color: #ecf0f1;
+}
+
+#projects h2 {
+  font-family: sans-serif;
+}
+
+#projects #wrap {
+  width: 80%;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
