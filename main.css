@@ -118,7 +118,7 @@ nav #nav-right a:hover {
 #landing-text #icon-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: 2em;
+  margin-right: 1em;
 }
 
 #landing-text #icon-container img {
