@@ -28,7 +28,7 @@ body,html {
 */
 #landing-section {
 
-  background: url( 'res/escheresque_ste.png' ) fixed;
+  background: url( 'res/dark_wall.png' ) fixed;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -193,7 +193,7 @@ nav #nav-right a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url( 'res/escheresque_ste.png' ) fixed;
+  background: url( 'res/dark_wall.png' ) fixed;
   color: #ecf0f1;
 }
 
@@ -203,6 +203,7 @@ nav #nav-right a:hover {
 
 #projects #wrap {
   width: 80%;
+  margin-bottom: 3%;
   max-width: 1500px;
   display: flex;
   flex-wrap: wrap;
