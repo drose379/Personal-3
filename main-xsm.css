@@ -1,0 +1,20 @@
+#nav-left, #nav-right {
+  flex-basis: auto !important;
+  justify-content: center !important;
+}
+
+#nav-right {
+  justify-content: space-around !important;
+}
+
+#nav-left h1::after {
+  width: 0 !important;
+}
+nav {
+  flex-direction: column;
+  width: 100%;
+}
+
+#landing-text {
+
+}

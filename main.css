@@ -34,7 +34,6 @@ body,html {
   flex-direction: column;
   align-items: center;
   z-index: 5000;
-  min-height: 60vh;
   color: #ecf0f1;
   font-family: sans-serif;
   border-bottom: 5px solid #3498db;
@@ -69,7 +68,6 @@ nav #nav-left h1::after {
   bottom: -3px;
   left: 0;
   background-color: white;
-  margin: 0 auto;
 }
 
 nav #nav-left {
@@ -117,6 +115,8 @@ nav #nav-right a:hover {
   font-size: 1.5em;
   width: 80%;
   max-width: 1300px;
+  padding-bottom: 6%;
+  padding-top: 6%;
 }
 
 #landing-text h1 {
@@ -135,7 +135,7 @@ nav #nav-right a:hover {
   display: flex;
   justify-content: flex-end;
   margin-right: 1em;
-  margin-bottom: 2%;
+  /*margin-bottom: 2%;*/
 }
 
 #landing-text #icon-container img {
