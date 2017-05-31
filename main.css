@@ -53,10 +53,23 @@ nav {
   max-width: 1300px;
 }
 
-nav h1 {
+nav #nav-left h1 {
   margin: 0;
   padding: 0;
   font-size: 1.5em;
+  position: relative;
+  /*
+  border-bottom: 3px solid #ecf0f1;*/
+}
+nav #nav-left h1::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  margin: 0 auto;
 }
 
 nav #nav-left {
@@ -103,7 +116,6 @@ nav #nav-right a:hover {
   align-self: center;
   font-size: 1.5em;
   width: 80%;
-
   max-width: 1300px;
 }
 
