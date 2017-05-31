@@ -49,7 +49,7 @@ nav {
   display: flex;
   width: 80%;
   margin-top: 2%;
-
+  margin-bottom: 2%;
   max-width: 1300px;
 }
 
@@ -78,6 +78,10 @@ nav #nav-right {
 
 nav #nav-right a:nth-child(1) {
   border-bottom-color: #3498db;
+}
+
+nav #nav-right a:nth-child(3) {
+  margin-right: 0;
 }
 
 nav #nav-right a {
@@ -119,6 +123,7 @@ nav #nav-right a:hover {
   display: flex;
   justify-content: flex-end;
   margin-right: 1em;
+  margin-bottom: 2%;
 }
 
 #landing-text #icon-container img {

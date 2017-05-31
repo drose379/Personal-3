@@ -1,0 +1,24 @@
+nav {
+  width: 92%;
+  background-color: blue;
+}
+
+#landing-text {
+  background-color: blue;
+  width: 92%;
+}
+
+#landing-bottom h2 {
+  background-color: red;
+  width: 92% !important;
+}
+
+#landing-bottom #wrap {
+  background-color: blue;
+  width: 92%;
+}
+
+#projects h2 {
+  background-color: red;
+  width: 92% !important;
+}
