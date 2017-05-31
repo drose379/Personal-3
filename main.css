@@ -63,7 +63,7 @@ nav #nav-left h1 {
 nav #nav-left h1::after {
   content: '';
   position: absolute;
-  width: 80%;
+  width: 120%;
   height: 3px;
   bottom: -3px;
   left: 0;
