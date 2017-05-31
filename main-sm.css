@@ -6,6 +6,8 @@ nav {
 #landing-text {
   width: 92%;
   font-size: 1.8em;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 #landing-bottom h2 {
