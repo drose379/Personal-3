@@ -1,24 +1,21 @@
 nav {
   width: 92%;
-  background-color: blue;
+  font-size: 1.5em;
 }
 
 #landing-text {
-  background-color: blue;
   width: 92%;
+  font-size: 2em;
 }
 
 #landing-bottom h2 {
-  background-color: red;
   width: 92% !important;
 }
 
 #landing-bottom #wrap {
-  background-color: blue;
   width: 92%;
 }
 
 #projects h2 {
-  background-color: red;
   width: 92% !important;
 }
