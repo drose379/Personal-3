@@ -1,3 +1,39 @@
 $( document ).ready( function() {
-    console.log( $('nav').outerHeight() );
+  var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
+  $('#landing-text').css( 'margin-top', landingTextTopOffset );
+
+  var navFolded = false;
+  var navOffsetTop = $('nav').offset().top;
+  var navPaddingTopBottom = $('nav').css('padding-top');
+  $(window).scroll( function() {
+    var scrollAmount = $(document).scrollTop();
+
+    if( scrollAmount >= 20 ) {
+      if( !navFolded ) {
+        // Fold the nav, just use addclass/removeclass
+        //$('nav').animate( {'margin-top': '0'}, 150 );
+        $('nav').css( 'background-color', 'rgba(49, 49, 49, 0.98)');
+        //$( 'nav' ).css( 'padding-top', '20px' );
+        //$('nav').css( 'padding-bottom', '20px' );
+
+        $('nav').animate( {'padding-top': '20px', 'padding-bottom': '20px'}, 150 );
+
+        //$('nav').find('h1').toggleClass( 'no-after' );
+        navFolded = true;
+      }
+    } else {
+      if( navFolded ) {
+        // Unfold the nav, just use addclass/removeclass
+        //$('nav').animate( {'margin-top': navOffsetTop }, 150 );
+        $('nav').css( 'background-color', 'inherit');
+        //$('nav').css( 'padding-top', navPaddingTopBottom );
+        //$('nav').css( 'padding-bottom', navPaddingTopBottom );
+
+        $('nav').animate( {'padding-top': navPaddingTopBottom, 'padding-bottom': navPaddingTopBottom}, 150 );
+
+        //$('nav').find('h1').toggleClass( 'no-after' );
+        navFolded = false;
+      }
+    }
+  });
 });

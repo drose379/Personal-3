@@ -47,9 +47,14 @@ body,html {
 nav {
   display: flex;
   width: 80%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  /*margin-top: 2%;
+  margin-bottom: 2%;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+
   max-width: 1300px;
+
+  position: fixed;
 }
 
 nav #nav-left h1 {
@@ -68,6 +73,11 @@ nav #nav-left h1::after {
   bottom: -3px;
   left: 0;
   background: linear-gradient( 140deg, #ecf0f1 0%, #ecf0f1 40%, #3498db 40%, #3498db 47%, #1d6ea4 47%, #1d6ea4 53%, red 53%, red 60%, #ecf0f1 60%, #ecf0f1 100% );
+}
+
+nav #nav-left h1.no-after::after {
+  content: '';
+  width: 0;
 }
 
 nav #nav-left {
@@ -211,6 +221,7 @@ nav #nav-right a:hover {
   flex-direction: column;
   background: url( 'res/escheresque_ste.png' ) fixed;
   color: #ecf0f1;
+  margin-bottom: 200em;
 }
 
 #projects h2 {
