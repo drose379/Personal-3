@@ -221,7 +221,6 @@ nav #nav-right a:hover {
   flex-direction: column;
   background: url( 'res/escheresque_ste.png' ) fixed;
   color: #ecf0f1;
-  margin-bottom: 200em;
 }
 
 #projects h2 {
