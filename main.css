@@ -55,6 +55,10 @@ nav {
   max-width: 1300px;
 
   position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav #nav-left h1 {
@@ -173,8 +177,6 @@ nav #nav-right a:hover {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 3%;
-  justify-content: center;
-
   max-width: 1300px;
 }
 
