@@ -12,11 +12,11 @@ $( document ).ready( function() {
       if( !navFolded ) {
         // Fold the nav, just use addclass/removeclass
         //$('nav').animate( {'margin-top': '0'}, 150 );
+        $('nav').animate( {'padding-top': '20px', 'padding-bottom': '20px'}, 150 );
         $('nav').css( 'background-color', '#2c3e50');
+        $('nav').css( 'box-shadow', '0px 0px 20px black' );
         //$( 'nav' ).css( 'padding-top', '20px' );
         //$('nav').css( 'padding-bottom', '20px' );
-
-        $('nav').animate( {'padding-top': '20px', 'padding-bottom': '20px'}, 150 );
 
         //$('nav').find('h1').toggleClass( 'no-after' );
         navFolded = true;
@@ -26,6 +26,7 @@ $( document ).ready( function() {
         // Unfold the nav, just use addclass/removeclass
         //$('nav').animate( {'margin-top': navOffsetTop }, 150 );
         $('nav').css( 'background-color', 'inherit');
+        $('nav').css( 'box-shadow', 'inherit' );
         //$('nav').css( 'padding-top', navPaddingTopBottom );
         //$('nav').css( 'padding-bottom', navPaddingTopBottom );
 

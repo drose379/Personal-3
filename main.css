@@ -46,19 +46,23 @@ body,html {
 
 nav {
   display: flex;
-  width: 80%;
   /*margin-top: 2%;
   margin-bottom: 2%;*/
   padding-top: 2%;
   padding-bottom: 2%;
 
-  max-width: 1300px;
-
   position: fixed;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+
+  justify-content: center;
+  
+}
+
+nav #wrap {
+  display: flex;
+  max-width: 1300px;
+  width: 80%;
 }
 
 nav #nav-left h1 {
