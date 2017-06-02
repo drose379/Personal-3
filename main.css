@@ -28,7 +28,7 @@ body,html {
 */
 #landing-section {
 
-  background: url( 'res/escheresque_ste.png' ) fixed;
+  background: #2c3e50;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -231,7 +231,7 @@ nav #nav-right a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: url( 'res/escheresque_ste.png' ) fixed;
+  background: #2c3e50;
   color: #ecf0f1;
 }
 

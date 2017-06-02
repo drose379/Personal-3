@@ -12,7 +12,7 @@ $( document ).ready( function() {
       if( !navFolded ) {
         // Fold the nav, just use addclass/removeclass
         //$('nav').animate( {'margin-top': '0'}, 150 );
-        $('nav').css( 'background-color', 'rgba(49, 49, 49, 0.98)');
+        $('nav').css( 'background-color', '#2c3e50');
         //$( 'nav' ).css( 'padding-top', '20px' );
         //$('nav').css( 'padding-bottom', '20px' );
 
