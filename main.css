@@ -176,8 +176,13 @@ nav #nav-right a:hover {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 3%;
   max-width: 1300px;
+}
+
+#landing-bottom h2 {
+  margin-top: 3%;
 }
 
 #landing-bottom .landing-item {
@@ -187,11 +192,14 @@ nav #nav-right a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em;
+  /*margin: 1em;*/
+  margin-top: 3%;
+  margin-right: 5%;
 }
 
 #landing-bottom .landing-item h3 {
   margin: 0;
+  font-size: 1.3em;
 }
 
 .section-header{
@@ -205,11 +213,14 @@ nav #nav-right a:hover {
   height: 3.5em;
 }
 
+
 #landing-bottom p {
-  width: 85%;
   margin: 0;
-  text-align: justify;
+  font-size: 1.2em;
   margin-top: 0.3em;
+  text-align: center;
+  width: 95%;
+  text-align: center;
 }
 
 
