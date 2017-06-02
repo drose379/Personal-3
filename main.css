@@ -64,6 +64,8 @@ nav #wrap {
   display: flex;
   max-width: 1300px;
   width: 80%;
+  background-color: red;
+  flex-wrap: wrap;
 }
 
 nav #nav-left h1 {

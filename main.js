@@ -1,6 +1,9 @@
 $( document ).ready( function() {
-  var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
-  $('#landing-text').css( 'margin-top', landingTextTopOffset );
+  remarginContent();
+
+  $(window).resize( function() {
+    remarginContent();
+  } );
 
   var navFolded = false;
   var navOffsetTop = $('nav').offset().top;
@@ -38,3 +41,8 @@ $( document ).ready( function() {
     }
   });
 });
+
+function remarginContent() {
+  var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
+  $('#landing-text').css( 'margin-top', landingTextTopOffset );
+}
