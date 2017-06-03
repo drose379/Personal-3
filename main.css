@@ -238,6 +238,7 @@ nav #nav-right a:hover {
   flex-direction: column;
   background: #2c3e50;
   color: #ecf0f1;
+  border-bottom: 5px solid #3498db;
 }
 
 #projects h2 {
@@ -258,10 +259,10 @@ nav #nav-right a:hover {
   flex-grow: 1;
   flex-basis: 100%;
   display: flex;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
   border-radius: 5px;
 }
 
@@ -302,20 +303,89 @@ nav #nav-right a:hover {
   margin-right: 0.5em;
 }
 
-/*
-#landing-bottom .landing-item:nth-child(1) {
-  background: url( 'res/stardust.png' );
+
+#contact::before {
+
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 5000;
+  color: black;
+  border-bottom: 5px solid #3498db;
 }
 
-#landing-bottom .landing-item:nth-child(2) {
-  background: url( 'res/geometry.png' );
+#contact .section-header {
+  font-family: sans-serif;
 }
 
-#landing-bottom .landing-item:nth-child(3) {
-  background: url( 'res/ep_naturalblack.png' );
+#contact #wrap {
+  width: 80%;
+  margin-bottom: 3%;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#landing-bottom .landing-item:nth-child(4) {
-  background: url( 'res/cloudy-day.png' );
+#contact .input-item {
+  flex-grow: 1;
+  flex-basis: 300px;
+  margin-top: 1em;
+  margin: 1em;
 }
-*/
+#contact .input-item:nth-child(1) {
+   margin-left: 0;
+}
+#contact .input-item:nth-child(3) {
+  margin-right: 0;
+}
+#contact label {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+#contact .input-item input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  transition: 0.05s;
+}
+
+#contact .input-item input:focus {
+  border: 2px solid #3498db;
+}
+
+#message-input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#message-input textarea {
+  resize: none;
+  font-family: sans-serif;
+  height: 8em;
+  padding: 1em;
+  font-size: 1em;
+}
+#message-input textarea:focus {
+  border: 2px solid #3498db;
+}
+
+#send-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 1em;
+}
+
+#send-container #send-button {
+  border: 3px solid #3498db;
+  padding: 1em;
+}
+
+
+footer {
+  background: url( 'res/ep_naturalblack.png' ) fixed;
+  padding: 2em;
+}

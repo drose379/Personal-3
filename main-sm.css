@@ -24,3 +24,11 @@ nav #wrap {
 #projects h2 {
   width: 92% !important;
 }
+
+#projects #wrap {
+  width: 92%;
+}
+
+#projects .project-item {
+
+}
