@@ -42,6 +42,10 @@ nav #wrap {
   width: 100%;
 }
 
+#contact .input-item input {
+  font-size: 2em;
+}
+
 #contact #message-input {
   width: 100%;
 }
