@@ -2,7 +2,7 @@ $( document ).ready( function() {
   remarginContent();
 
   $(window).resize( function() {
-    //remarginContent();
+    remarginContent(); /* !!!!ONLY DO THIS IF WIDTH CHANGES, NOT HEIGHT */
   } );
 
   var navFolded = false;
@@ -43,6 +43,7 @@ $( document ).ready( function() {
 });
 
 function remarginContent() {
-  var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
+  //var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
+  var landingTextTopOffset = $('nav').outerHeight();
   $('#landing-text').css( 'margin-top', landingTextTopOffset );
 }
