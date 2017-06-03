@@ -30,5 +30,22 @@ nav #wrap {
 }
 
 #projects .project-item {
+  flex-direction: column;
+}
 
+#projects .project-item img {
+  width: 80%;
+  align-self: center;
+}
+
+#contact .input-item {
+  width: 100%;
+}
+
+#contact #message-input {
+  width: 100%;
+}
+
+#contact #send-container {
+  width: 100%;
 }

@@ -311,8 +311,6 @@ nav #nav-right a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  z-index: 5000;
   color: black;
   border-bottom: 5px solid #3498db;
 }
@@ -327,62 +325,88 @@ nav #nav-right a:hover {
   max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+#contact #input-container {
+  flex-grow: 1;
+  flex-basis: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #contact .input-item {
-  flex-grow: 1;
-  flex-basis: 300px;
-  margin-top: 1em;
-  margin: 1em;
-}
-#contact .input-item:nth-child(1) {
-   margin-left: 0;
-}
-#contact .input-item:nth-child(3) {
-  margin-right: 0;
-}
-#contact label {
-  font-family: sans-serif;
-  font-size: 1.2em;
-}
-#contact .input-item input {
-  width: 100%;
-  padding: 0.5em;
-  font-size: 1em;
-  transition: 0.05s;
-}
-
-#contact .input-item input:focus {
-  border: 2px solid #3498db;
-}
-
-#message-input {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  margin: 0.5em;
+  width: 80%;
 }
-#message-input textarea {
-  resize: none;
+
+#contact label {
   font-family: sans-serif;
-  height: 8em;
-  padding: 1em;
+}
+
+#contact .input-item input {
+  padding: 0.5em;
   font-size: 1em;
 }
-#message-input textarea:focus {
-  border: 2px solid #3498db;
+
+#contact #message-input {
+  margin: 0.5em;
+  width: 80%;
+}
+
+#contact #message-input textarea {
+  width: 100%;
+  font-family: sans-serif;
+  height: 8em;
+  font-size: 1em;
+  padding: 0.5em;
+  resize: none;
 }
 
 #send-container {
+  width: 80%;
+  margin: 0.5em;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-left: 1em;
+  justify-content: flex-end;
 }
 
-#send-container #send-button {
-  border: 3px solid #3498db;
-  padding: 1em;
+#send-container button {
+  padding: 0.2em;
+  border: 3px solid #2c3e50;
+  cursor: pointer;
+  transition: 0.2s;
 }
+
+#send-container button:hover {
+  border: 3px solid #3498db;
+}
+
+#send-container button img {
+  width: 40%;
+}
+
+#bio-area {
+  flex-grow: 1;
+  flex-basis: 400px;
+}
+#bio-area img {
+  width: auto;
+  height: 4em;
+}
+#bio-area h3 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+#bio-area p {
+  font-family: sans-serif;
+  margin: 0;
+}
+
 
 
 footer {
