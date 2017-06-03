@@ -50,8 +50,7 @@ nav {
   /*margin-top: 2%;
   margin-bottom: 2%;*/
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 2em;
 
   position: fixed;
   left: 0;
@@ -251,7 +250,6 @@ nav #nav-right a:hover {
   max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50em;
 }
 
 /*

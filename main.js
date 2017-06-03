@@ -33,7 +33,7 @@ $( document ).ready( function() {
         //$('nav').css( 'padding-top', navPaddingTopBottom );
         //$('nav').css( 'padding-bottom', navPaddingTopBottom );
 
-        $('nav').animate( {'padding-top': navPaddingTopBottom, 'padding-bottom': navPaddingTopBottom}, 150 );
+        $('nav').animate( {'padding-top': navPaddingTopBottom, 'padding-bottom': 0}, 150 );
 
         //$('nav').find('h1').toggleClass( 'no-after' );
         navFolded = false;
