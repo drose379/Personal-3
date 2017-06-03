@@ -2,7 +2,7 @@ $( document ).ready( function() {
   remarginContent();
 
   $(window).resize( function() {
-    remarginContent();
+    //remarginContent();
   } );
 
   var navFolded = false;
