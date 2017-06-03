@@ -250,6 +250,56 @@ nav #nav-right a:hover {
   max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
+
+}
+
+#projects .project-item {
+
+  flex-grow: 1;
+  flex-basis: 100%;
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+#projects .project-item .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+
+  font-family: sans-serif;
+}
+
+#projects .project-item h3 {
+  margin: 0.5em;
+}
+
+#projects .project-item .info p {
+  margin: 0.5em;
+  width: 85%;
+}
+
+#projects .project-item .info ul {
+  margin: 0.5em;
+}
+
+#projects .project-item .info {
+  margin
+}
+
+#projects .col {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.project-item img {
+  width: auto;
+  height: 400px;
+  margin-right: 0.5em;
 }
 
 /*
