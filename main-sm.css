@@ -34,7 +34,8 @@ nav #wrap {
 }
 
 #projects .project-item img {
-  width: 80%;
+  margin-top: 1em;
+  width: auto;
   align-self: center;
 }
 
