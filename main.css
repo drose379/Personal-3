@@ -121,7 +121,7 @@ nav #nav-right a {
 }
 
 nav #nav-right a:hover {
-  border-bottom-color: #1d6ea4;
+  border-bottom-color: #1d6ea4 !important;
 }
 
 #landing-text {

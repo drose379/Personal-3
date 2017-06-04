@@ -62,7 +62,7 @@ $( document ).ready( function() {
       // Highlight about
 
       if( curNav != aboutNav ) {
-        curNav.css( 'border-bottom', 'rgba(0,0,0,0)' );
+        curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
         curNav = aboutNav;
         curNav.css( 'border-bottom', '3px solid #3498db' );
       }
@@ -89,6 +89,19 @@ $( document ).ready( function() {
       }
     }
 
+  });
+
+  homeNav.click( function() {
+    $('body').animate( {'scrollTop': '0'} );
+  });
+  aboutNav.click( function() {
+    $('body').animate( {'scrollTop': aboutTop - 50} );
+  });
+  projectsNav.click( function() {
+    $('body').animate( {'scrollTop': projectsTop - 50} );
+  });
+  contactNav.click( function() {
+    $('body').animate( {'scrollTop': contactTop - 50} );
   });
 
 });
