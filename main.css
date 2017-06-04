@@ -12,10 +12,12 @@ body,html {
   box-sizing: border-box;
 }
 
+/*
 .width-restraint-wrapper {
   max-width: 1400px;
-  background-color: red; /* MUST IMPLEMENT NEXT */
+  background-color: red; /* MUST IMPLEMENT NEXT 
 }
+*/
 
 /*
 #landing-section::before {

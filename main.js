@@ -66,14 +66,14 @@ $( document ).ready( function() {
         curNav = aboutNav;
         curNav.css( 'border-bottom', '3px solid #3498db' );
       }
-    } else if( scrollAmount > projectsTop && scrollAmount < contactTop ) {
+    } else if( scrollAmount > projectsTop && scrollAmount < (contactTop-150) ) {
       // Highlight projects
       if( curNav != projectsNav ) {
         curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
         curNav = projectsNav;
         curNav.css( 'border-bottom', '3px solid #3498db' );
       }
-    } else if( scrollAmount > contactTop ) {
+    } else if( scrollAmount > contactTop-150 ) {
       // Highlight contact
       if( curNav != contactNav ) {
         curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
@@ -104,11 +104,13 @@ $( document ).ready( function() {
     $('body').animate( {'scrollTop': contactTop - 50} );
   });
 
+
+  $('#send-container button').click( function() {
+    console.log( "Sa" );
+  });
+
 });
 
-function unhighlightNavs( navs ) {
-
-}
 
 function remarginContent() {
   //var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
