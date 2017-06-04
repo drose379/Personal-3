@@ -118,6 +118,7 @@ nav #nav-right a {
   transition: 0.2;
   border-bottom: 3px solid rgba(0,0,0,0);
   cursor: pointer;
+  text-decoration: none;
 }
 
 nav #nav-right a:hover {
