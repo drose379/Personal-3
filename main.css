@@ -106,10 +106,10 @@ nav #nav-right {
 }
 
 nav #nav-right a:nth-child(1) {
-  border-bottom-color: #3498db;
+  /*border-bottom-color: #3498db;*/
 }
 
-nav #nav-right a:nth-child(3) {
+nav #nav-right a:nth-child(4) {
   margin-right: 0;
 }
 
@@ -362,6 +362,7 @@ nav #nav-right a:hover {
   font-size: 1em;
   padding: 0.5em;
   resize: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 #send-container {

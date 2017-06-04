@@ -40,7 +40,62 @@ $( document ).ready( function() {
       }
     }
   });
+
+  var aboutTop = $('#landing-bottom').offset().top;
+  var projectsTop = $('#projects').offset().top;
+  var contactTop = $('#contact').offset().top - 50;
+
+  var homeNav = $('#nav-right a:nth-child(1)');
+  var aboutNav = $('#nav-right a:nth-child(2)');
+  var projectsNav = $('#nav-right a:nth-child(3)');
+  var contactNav = $('#nav-right a:nth-child(4)');
+
+  homeNav.css( 'border-bottom', '3px solid #3498db' );
+  var curNav = homeNav;
+
+
+  $(window).scroll( function() {
+    // Have variables for top offsets of all sections, highlight correct nav
+    var scrollAmount = $('nav').offset().top + $('nav').outerHeight();
+
+    if( scrollAmount > aboutTop && scrollAmount < projectsTop ) {
+      // Highlight about
+
+      if( curNav != aboutNav ) {
+        curNav.css( 'border-bottom', 'rgba(0,0,0,0)' );
+        curNav = aboutNav;
+        curNav.css( 'border-bottom', '3px solid #3498db' );
+      }
+    } else if( scrollAmount > projectsTop && scrollAmount < contactTop ) {
+      // Highlight projects
+      if( curNav != projectsNav ) {
+        curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
+        curNav = projectsNav;
+        curNav.css( 'border-bottom', '3px solid #3498db' );
+      }
+    } else if( scrollAmount > contactTop ) {
+      // Highlight contact
+      if( curNav != contactNav ) {
+        curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
+        curNav = contactNav;
+        curNav.css( 'border-bottom', '3px solid #3498db' );
+      }
+    } else if( scrollAmount < aboutTop ) {
+      // Highlight home
+      if( curNav != homeNav ) {
+        curNav.css( 'border-bottom', '3px solid rgba(0,0,0,0)' );
+        curNav = homeNav;
+        curNav.css( 'border-bottom', '3px solid #3498db' );
+      }
+    }
+
+  });
+
 });
+
+function unhighlightNavs( navs ) {
+
+}
 
 function remarginContent() {
   //var landingTextTopOffset = $('nav').offset().top + $('nav').outerHeight() /*+ $('body').height() * 0.03*/;
