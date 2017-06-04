@@ -4,7 +4,14 @@
   <link rel="stylesheet" type="text/css" href="main.css" />
   <link rel="stylesheet" type="text/css" href="main-sm.css" media="(max-width: 1100px)" />
   <link rel="stylesheet" type="text/css" href="main-xsm.css" media="(max-width: 950px)" />
+
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Sweet Alert -->
+  <script src="sweetalert/sweetalert-master/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="sweetalert/sweetalert-master/dist/sweetalert.css">
+
   <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -125,7 +132,7 @@
     <h2 style="width: 80%; max-width: 1300px;" class="section-header">questions, comments, interested? <span style="color: #3498db;">&mdash;</span> lets talk!</h2>
     <div id="wrap">
 
-      <div id="input-container">
+      <form id="input-container">
         <div class="input-item">
           <label for="name">NAME</label>
           <input id="name" type="text" placeholder="John Doe" />
@@ -150,7 +157,7 @@
             <button><img src="res/send.png"/></button>
         </div>
 
-      </div>
+      </form>
 
       <div id="bio-area">
         <img src="res/me.png" />

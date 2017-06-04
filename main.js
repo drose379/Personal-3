@@ -105,8 +105,33 @@ $( document ).ready( function() {
   });
 
 
-  $('#send-container button').click( function() {
-    console.log( "Sa" );
+  $('#input-container').submit( function( event ) {
+    event.preventDefault();
+    var name = $('#name').val();
+    var senderEmail = $('#email').val();
+    var subject = $('#subject').val();
+    var message = $('#message').val();
+
+    if( senderEmail.indexOf( '@' ) >= 0 && name ) {
+      // Valid email
+      swal({
+        "title": "I'll be in touch",
+        "text": "Thanks for reaching out, " + name + "! I'll get back to you as soon as I can!",
+        "timer": 1500,
+        "showConfirmButton": false,
+        "type": "success"
+      });
+    } else {
+      // Must provide a valid email
+      swal({
+        "type": "error",
+        "title": "Try Again",
+        "text": "Please provide a valid name and email!",
+        "timer": 1500,
+        "showConfirmButton": false
+      });
+    }
+
   });
 
 });
