@@ -114,6 +114,17 @@ $( document ).ready( function() {
 
     if( senderEmail.indexOf( '@' ) >= 0 && name ) {
       // Valid email
+
+      var data = {
+        'name': name,
+        'replyto': senderEmail,
+        'message': message
+      };
+
+      var http = new XMLHttpRequest();
+      http.open( "POST", "https://dylanrose.me/api/send-mail.php" );
+      http.send( JSON.stringify( data ) );
+
       swal({
         "title": "I'll be in touch",
         "text": "Thanks for reaching out, " + name + "! I'll get back to you as soon as I can!",
@@ -122,7 +133,7 @@ $( document ).ready( function() {
         "type": "success"
       });
     } else {
-      // Must provide a valid email
+      // Must provide a valid email and name
       swal({
         "type": "error",
         "title": "Try Again",
