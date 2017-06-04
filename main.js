@@ -132,6 +132,9 @@ $( document ).ready( function() {
         "showConfirmButton": false,
         "type": "success"
       });
+
+      $('#input-container').trigger( "reset" );
+
     } else {
       // Must provide a valid email and name
       swal({
