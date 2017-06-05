@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body,html {
   margin: 0;
   padding: 0;
   background-color: #ecf0f1;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -15,7 +15,7 @@ body,html {
 /*
 .width-restraint-wrapper {
   max-width: 1400px;
-  background-color: red; /* MUST IMPLEMENT NEXT 
+  background-color: red; /* MUST IMPLEMENT NEXT
 }
 */
 
@@ -365,7 +365,7 @@ nav #nav-right a:hover {
   font-size: 1em;
   padding: 0.5em;
   resize: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #send-container {
